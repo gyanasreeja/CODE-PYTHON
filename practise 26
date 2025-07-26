@@ -1,0 +1,37 @@
+1. class Solution:
+    def insertAtEnd(self, arr, val):
+       # code here
+       arr=arr.append(val)
+       return arr
+2.class Solution:
+    def insertAtIndex(self, arr, index, val):
+        # code here
+        arr=arr.insert(index,val)
+        return arr
+3. def updateArray(arr,n,idx,element):
+    #code here
+    arr=arr.insert(idx,element)
+4.def deleteFromArray(arr,n,idx):
+    #code here
+    del arr[idx]
+    arr=arr.append(0)
+    return arr
+5. class Solution:
+    def median(self, arr):
+       n= sorted(arr)
+       mid=len(arr)//2
+       if mid%2==0:
+           k=n[mid]+n[mid-1]
+           k1=k//2
+           return k1
+       else:
+           k=n[mid]
+           
+        #code here
+    
+    def mean(self, arr):
+        total=sum(arr)
+        n=len(arr)
+        ans=total//n
+        return ans
+        #code here
